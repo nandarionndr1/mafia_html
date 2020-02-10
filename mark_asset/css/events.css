@@ -1,0 +1,828 @@
+
+    @font-face {
+        font-family: "Playfair Display";
+        src: url("fonts/playfair-display/PlayfairDisplay-Regular.ttf");
+        }
+    @font-face {
+        font-family: "Open Sans";
+        src: url("fonts/open-sans/OpenSans-Regular.ttf");
+        }
+    @font-face {
+        font-family: "Roboto";
+        src: url("fonts/open-sans/Roboto-Regular.ttf");
+        }
+    body{
+        background-color: #404a59
+    }
+    img {max-width:100%}
+    hr.orange {
+        border: 4px solid #CBBA37;
+        width: 15%;
+        margin-left:0; margin-right:auto; margin-top:0;
+      }
+      
+     .pointer {cursor: pointer;}
+      p.orange_txt{
+
+        font-weight: bold;
+        font-family:'Open Sans',sans-serif;color: #CBBA37; font-size:1.5vw;
+      }
+      hr.orange_invert {
+        border: 4px solid #CBBA37;
+        width: 10%;
+        margin-left:auto; margin-right:0; margin-top:0;
+      }
+      hr.orange_mid {
+        border: 4px solid #CBBA37;
+        width: 5%;
+        margin-left:auto; margin-right:auto; margin-top:0;
+      }
+    .opp_desc{
+        font-family:'Open Sans',sans-serif;font-size:24vw;text-align:justify;color: #444444;
+        margin-top:5vh;text-align:justify; font-size:1.5vw;
+    }
+    .ev_card_title{
+        font-weight: bold;
+        font-family: 'Playfair Display',sans-serif;
+        color: black;
+    }
+    .ev_card_text{
+        font-size: 1vw;
+    }
+    .opp_font{
+        font-weight: bold;
+        font-family: 'Playfair Display',sans-serif;
+        color: black;
+    }
+    div{
+        display: block
+    }
+
+    .banner_text{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%); 
+        width: 60vw;background:rgba(14, 12, 12, 0.61);
+        border-radius: 25px;
+    }
+    .card{
+        border: 0px
+    }
+    .banner_font{
+        font-weight: bold;
+        color:#CBBA37;
+        font-size:7vw;
+        font-family: 'Open Sans',sans-serif;
+    }
+    .card{
+        white-space: normal
+    }
+    .carou_text{
+        width:10vw;
+        background:rgba(14, 12, 12, 0.61);
+        border-radius: 25px;
+    }
+    .carou_font{
+
+        padding-left: 0.5vw;
+        font-weight: bold;
+        color:#CBBA37;
+        font-size:1.5vw;
+        font-family: 'Open Sans',sans-serif;
+    }
+    html *
+    {
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    } 
+    .button2 {
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(153, 153, 255);
+        margin: 10px;
+        padding: 5px;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    .button2:hover {
+        background-color: #555555;
+        color: white;
+    }
+    .button1 {
+        background-color: white;
+        color: rgb(153, 153, 255);
+        margin: 20px;
+        padding: 10px;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+        border: 1px solid #555555; /* Green */
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+    .button1:hover {
+        background-color: #555555;
+        color: white;
+    }
+    .hr_sched {
+        display: block;
+        margin-top:0.5px;
+        margin-bottom: 1px;
+        border: 0;
+        border-top: 1px solid rgba(214, 190, 190, 0.952);
+        padding: 0; 
+    }
+    .vr{
+        border-left:1px solid rgba(214, 190, 190, 0.952);
+        height:50px;
+        float: left;
+        margin-right:10px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    .bg{
+        background-image: url("../arch_bg.jpg");
+
+        /* Full height */
+        height: 100%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .overlay_pic{
+        position: absolute;
+        content:" ";
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display: block;
+        z-index:0;
+        background:linear-gradient(to top, rgba(41, 37, 12, 0.897), rgba(46, 42, 13, 0.959));
+      }
+    p.normal {
+        font-size: 150%;
+        font-family: arial;
+        text-shadow: 0;
+        font-weight: normal;
+    }
+    p.normal-small-txt {
+        display: inline;
+        font-size: 90%;
+        font-family: arial;
+        text-shadow: 0;
+        font-weight: normal;
+    }
+    p.normal-small-hdr {
+        display: inline;
+        font-size: 110%;
+        font-family: arial;
+        text-shadow: 0;
+        font-weight: bold;
+    }
+    p.normalin {
+        font-size: 120%;
+        font-family: 'Product Sans';
+        text-shadow: 0;
+        font-weight: normal;
+    }
+    p.normalinb {
+        font-size: 120%;
+        font-family: 'Product Sans';
+        text-shadow: 0;
+        font-weight: bold;
+    }
+    p.thick {
+        font-size: 250%;
+        font-family: 'Product Sans';
+        text-shadow: 0;
+        font-weight: bold;
+    }
+    b.thick{
+        font-size: 120%;
+        font-family: 'Open Sans';
+        color:black;
+
+        font-weight: bold;
+    }
+    p.thicker {
+        font-size: 140%;
+        font-family: arial;
+        text-shadow: 0;
+        font-weight: 900;
+    }
+    .bg2{
+
+
+        background-image: url("../banner_motd.png");
+
+        /* Full height */
+        height: 75%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .txt_left{
+        text-align: left;
+    }
+    .big_chungus{
+        height:100%;
+    }
+    .read_more{
+        opacity: 0;
+    }
+    .overlay_carousel {
+        position: absolute;
+        content: " hello";
+        top: 0;
+        left: 0;
+        opacity: 0.25;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+        /*
+        -webkit-transition: background-color 2s;
+        -moz-transition: background-color 1s;
+        transition: background-color  2s ;
+        */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.932), rgba(27, 27, 27, 0.295));
+    }
+    /*
+    .overlay_carousel:hover{
+        -webkit-transition: background-color 2s;
+        -moz-transition: background-color 1s;
+        transition: background-color  2s ;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.808), rgba(27, 27, 27, 0.623));
+    }*/
+    .bg3{
+
+
+        background-image: url("logo.jpg");
+
+        /* Full height */
+        height: 25%; 
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .template {
+        background: #404a59;
+        position: relative;
+    }
+    .action-bar {
+        position:absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.808);
+        z-index: 50;
+        padding: 10px;
+        background:linear-gradient(to left,  rgba(27, 27, 27, 0.973),rgba(0, 0, 0, 0.966));
+    }
+.verticalz{
+    overflow: hidden;
+    width: 100%;
+}
+.contentz{
+    float:left;
+    width: 100%;
+    overflow-x: scroll;
+    margin-bottom: -20px;
+    white-space: nowrap;
+    padding: 10px;
+}
+.itemz{
+    display: inline-block;
+    text-align: center;
+}
+    .view {
+        position: relative;
+        z-index: 1;
+        min-height: 400px;
+        background: #404a59;
+    }
+    .view section.cover {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+    .view section {
+        background-color: #f5f5f5;
+        color: #666;
+        position: relative;
+        padding: 0px 0 80px 0;
+    }
+    .view section h1 {
+        font-size: 400%;
+        font-family: 'Product Sans';
+    }
+    .view section p default {
+        font-size: 200%;
+        font-family: 'Product Sans';
+        text-shadow: 3px 1px #464746;  
+    }
+    .view section.cover video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .view section.black-trans {
+        background: rgba(0,0,0,0);
+        transition:background-color 1.4s ease;
+    }
+    .view section.black-trans2 {
+        background: rgba(3, 12, 3, 0.87);
+        transition:background-color 1.4s ease;
+    }
+    .view section.colored {
+        color: #fff;
+    }
+    view section .`iner {
+        position: relative;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+   
+    
+    /* svg
+
+
+    #leftside
+    {
+        border-right-style: solid;
+        border-right-width: 3px;
+        border-right-color: #2C6A8A;
+        padding-top: 13%;
+        padding-bottom: 13%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #cometLabel
+    {
+        color: #2C6A8A;
+        font-size: 4em;
+        padding-right: 40%;
+        padding-left: 10%;
+        padding-top: 10%;
+        font-family: Roboto-thin, sans-serif;
+    }
+    */
+    .pie svg { 
+      position: relative;
+      top: ; right: 0; bottom: 0; left: 0; 
+      margin: auto;
+      width: auto;
+    }
+
+    .graph { visibility: hidden; }
+
+    .graph > * { 
+      visibility: visible;
+      transition: all 200ms ease-in-out;
+    }
+
+    .graph:hover > * { opacity: 0.5; }
+
+    .graph__percent:hover {
+      stroke: #f96b07;
+      opacity: 1;
+    }
+    /* for slide title */ 
+
+    a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: auto;
+        text-decoration: none;
+    }
+    a {
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a.logo {
+
+        font-family: 'Product Sans';
+        color: #666;
+        font-size: 30px;
+        text-align: center;
+        text-shadow: 1px 2px #efefef;
+
+        line-height: 90px;
+    }
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    /* Add some padding inside the card container */
+    .container-card {
+        padding: 2px 16px;
+    }
+
+    .action-bar ul.nav {
+        font-family: 'Product Sans';
+        color: rgb(216, 230, 20);
+        vertical-align: bottom;
+        line-height: 20px;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        float: left;
+    }
+    .action-bar ul.nav li{
+        float:left;
+    }
+    .nav>li>a:focus, .nav>li>a:hover {
+        color: rgba(216, 230, 20, 0.753);
+        text-decoration: none;
+        background-color: transparent !important;
+    }
+    .nav>li>a {
+        color: #dadeee;
+        text-decoration: none;
+        background-color: transparent !important;
+    }
+    .holdingbox {
+        position: relative;
+        top: 0;
+    }
+    .leftbox {
+        position: relative;
+        top: 0;
+        left:0;
+
+        text-align: center;
+        display:inline-block;
+    }
+
+    .rightbox {
+        position: relative;
+        display:inline-block;
+        overflow:hidden;
+        text-align: center;
+        width:0;
+        height:75px;
+        vertical-align:top;
+    }
+    .content{
+        width:100px;
+        position:absolute;
+        text-align: center;
+        left:0;
+        top:0;
+    }
+    .box {
+        margin-left : 5px;
+    }
+    .wrapper img {
+        width: 200px;
+        height: 200px;
+    }
+    .wrapper h1 a img{
+        position: absolute;
+        
+        margin-top: 5px;/*half of height*/
+        margin-left: 5px;/*half of width*/
+        width: 90px;
+        height: 90px;
+    }
+    .img-align {
+         
+    }
+
+/* button group */
+.buttonwrapper {
+  display: inline-block;
+    float: left;
+}
+
+input{
+  background-color: transparent;
+  border: 2px solid white;
+  width: 250px;
+  height: 50px;
+}
+
+
+.gamz{
+    display: block;
+    position: absolute;
+    min-height: 400px;
+    min-width: 250px;
+    top: 240;
+    right: 50;
+}
+.test {
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+.test:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+
+/*image overlay*/
+.container-img {
+  position: relative;
+  width: 50%;
+}
+.overlay {
+  position: absolute;
+  top: 48;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(angry.png);
+}
+
+.container-img:hover .overlay {
+  opacity: 1;
+}
+.waw{
+    position: absolute;
+    background-color: #30c947;
+    left: 0x;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    
+    
+}
+.abt{
+    
+    position: absolute;
+    background-color: #30c947;
+    
+    left: 275px;
+    top: 302px;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+.abtt{
+    
+    position: absolute;
+    background-color: #30c947;
+    
+    left: 305px;
+    top: 302px;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+/* overlay code*/
+
+.overlayC {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlayC-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlayC a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlayC a:hover, .overlayC a:focus {
+    color: #f1f1f1;
+}
+
+.overlayC .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /* Dimensions */
+  width: 100%;
+  height: .25em;
+
+  /* Reset the apperance */  
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* For Firefox/IE10+ */
+  background-color: transparent;
+
+  /* For IE10+, color of the progress bar */
+  color: red;
+}
+
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+.flat::-webkit-progress-value {
+  background-color: red;
+}
+
+.flat::-moz-progress-bar {
+  background-color: red;
+}
+
+.single::-webkit-progress-value {
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(left, transparent, red);
+}
+
+.single::-moz-progress-bar {
+  background-color: transparent;
+  background-image: -moz-linear-gradient(left, transparent, red);
+}
+
+.multiple::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -webkit-linear-gradient(left, green, red);
+}
+
+.multiple::-moz-progress-bar {
+  background-image: -moz-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+                      -moz-linear-gradient(left, green, red);
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: .25em;
+  display: block;
+}
+.featured {
+    font-size: 10px;
+    white-space: nowrap;
+    color: #404040;
+    text-shadow: 2px 3px #dadfe8;
+}
+.progress-bar {
+  background-color: red;
+  width: 50%;
+  display: block;
+  height: inherit;
+}
+.img_txt_container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+/* tic tac toe */
+    .turn {
+        margin-bottom:10px;
+      }
+      table {
+        border-collapse:collapse;
+        width:150px;
+        margin:0 auto;
+          }
+        td {
+          text-align: center;    
+          width:50px;
+          height:50px;
+          border:2px solid #000;
+          cursor:pointer;
+        }
+          td:before {
+            font-size:1.5em;
+            line-height:1;
+          }
+          td.cross:before {
+            content:"x";
+            color:#000;
+          }
+          td.circle:before {
+            content:"o";
+            color:#000;
+          }
+        
+      
+      .reset {
+        background:#555;
+        border:1px solid black;
+        padding:5px 10px;
+        color:#000;
+        cursor:pointer;
+        font-family:"Roboto", Arial, sans-serif;
+        text-transform:uppercase;
+        &:hover {
+          opacity:0.8;
+        }
+/* ting go skraaa */
+          
+          

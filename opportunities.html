@@ -1,0 +1,189 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="mark_asset/logo.png" type="image/png">
+        <link rel="icon" type="image/png" href="mark_asset/logo.png"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="svg/svg.js"></script>
+        <link rel="stylesheet" type="text/css" href="mark_asset/css/opportunities.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>DLSU MaFIA</title>
+	</head>
+
+<body>
+
+    <div class="template" style="padding-top:0px;overflow: hidden">
+        <!-- insert navbar here -->
+        <div class="view" id="top" >
+            
+                <section  class="colored black-trans" style="padding-bottom: 0px; margin-bottom: 0px">
+                    <div class="bg2" style="padding:0px;margin: 0px" >
+                            
+                        <div class="overlay_pic">
+                                <div class="banner_text">
+                                    <center style="font-family:arial">
+                                       <p class="banner_font">OPPORTUNITIES</p>
+                                    </center>
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                        <div class="row arrow" style="overflow: hidden; whitespace: nowrap; padding: 20px; background-color:#ffffff">   
+                            <div class="col-md-12" style="padding-left: 12vw;padding-right:12vw" >
+                                    <h2 class="opp_font">Global Finance Convention 2018</h3>
+                                    <hr class="orange">
+                                        <center>
+                                                <img src="mark_asset/GFC_logo.png" width="490" height="420">
+                                        </center>
+                                        <p class="opp_desc" >
+                                                Global Finance Convention is a seminar initiated by the <b class="thick">Management of Financial Institutions Association</b> which aims to supplement knowledge to the respective delegates and motivate them to become economically and financially responsible members of the society by delving into comprehensive lectures and discussions on international business, economics, and finance.
+                                        </p>
+                                        <hr class="orange_mid"/>
+                                        <div class="row">
+                                            <div class="col-md-6" style="text-align:center">
+                                            <a href="https://goo.gl/J1qQVw">
+                                                <i class="material-icons" style="font-size:12vw;cursor: pointer;">description</i></a>
+                                                <br>
+                                                <p class="orange_txt">Application Form and Primer</p> 
+                                            </div>
+                                            <div class="col-md-6" style="text-align:center">
+                                            <a href="https://goo.gl/upD9LX">
+                                                <i class="material-icons" class="pointer" style="cursor: pointer;font-size:12vw;">people</i></a>
+                                                <br> 
+                                                <p class="orange_txt">Schedule an Interview</p> 
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div> 
+               </section>
+        </div>
+        <div class="footer" id="pt">
+            <div class="hr"></div>
+            <br><br>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
+<script>
+     
+
+$(document).ready(function() {
+    
+  $(document).on('scroll', function(e) {
+    $(window).scroll(function() {
+       var hT = $('#pt').offset().top,
+       hH = $('#pt').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+       
+       if ($(window).scrollTop() > 300) {
+            console.log($(this).scrollTop());
+           if (!$('.action-bar').hasClass('visible')){
+                $('.action-bar').fadeOut();
+                $('.action-bar').addClass('visible').removeAttr('style');
+                $('#star').fadeIn();
+           }
+            if ($(window).scrollTop() > 800){
+                $('#arsenalz').addClass('black-trans2').removeClass('black-trans');
+            }
+      }
+      
+      else if($(window).scrollTop() <= 300 && $('.action-bar').hasClass('visible')) {
+
+          $('#arsenalz').addClass('black-trans').removeClass('black-trans2');
+          $('.action-bar').fadeIn();
+          $('.action-bar').removeClass('visible').removeAttr('style');
+
+          $('#star').fadeOut();
+      } 
+    });
+  });
+});
+function Open(){
+    console.log("hello");
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+function click1(){
+     $('html,body').animate({
+        scrollTop: $("#arsenalz").offset().top},
+        'slow');
+}
+function click2(){
+     $('html,body').animate({
+        scrollTop: $("#top").offset().top},
+        'slow');
+}    
+function Func1(a){
+    $("#div-" + a).fadeIn(1000);              
+}
+function Func2(a){
+    
+    console.log('i here');
+    $("#lol").css({background: "url('eynl/"+a+".jpg')"})
+}
+$(document).ready(function(){
+    
+    var audio = document.getElementsByTagName("aud")[0];
+    $('.holdingbox').hover(function(){  
+        $('.rightbox').animate({width: '130px'}, 450)
+        $('#folio').css({ color:'#449e3c' });
+        var audio = document.getElementsByTagName("audio")[0];
+        audio.play();
+    }, function(){
+        $('.rightbox').animate({width: '0'}, 300);
+    });
+    
+ 
+    $('#imeg').hover(function(){
+        $('#waw').fadeIn();
+    }, function(){
+        $('#waw').fadeOut();
+    });
+    $('#test').hover(function(){
+       
+        $(".abt").animate({'top': '-=400px'}, 'fast');
+        $('#lol').css({display: 'inline-block'});
+        
+        $(".abtt").animate({'left': '+=200px', top: '-=72px', height:'35%', width:'30.1%'}, 'fast');
+        
+        for (divNo = 0; divNo < 5; divNo++) {
+            if ($("#div-" + divNo.toString()).css("display") == 'none') {
+                setTimeout("Func1("+ divNo.toString()+")", 500 * divNo);
+            }
+        }
+        
+         
+        
+    }, function(){
+        
+        $(".abt").animate({'top': '+=400px'}, 'fast');
+        $(".abtt").animate({'left': '-=200px', top: '+=72px',height:'15px',width:'15px'}, 'fast');
+        $('#lol').css({display: 'none'});
+        $("#div-0").css({ display: 'none'});
+        $("#div-1").css({ display: 'none'}); 
+        $("#div-2").css({ display: 'none'}); 
+        $("#div-3").css({ display: 'none'}); 
+        $("#div-4").css({ display: 'none'}); 
+        
+        for (divNo = 0; divNo < 5; divNo++) {
+            $("#div-" + divNo.toString()).css({ display: 'none'});   
+                
+            }
+    });
+
+});
+ 
+</script>
