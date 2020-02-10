@@ -1,0 +1,254 @@
+/* Colors */
+/* Typeface Variables */
+.content-header {
+  color: #444 !important;
+}
+
+#quote {
+  margin-top: 200px;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#quote p {
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-size: 5.9vw;
+  color: #7f7f7f;
+}
+
+#quote p span {
+  position: absolute;
+  font-size: 4vw;
+  color: #d7d7d7;
+}
+
+#quote p:first-child {
+  margin-right: 10vw;
+}
+
+#quote p:first-child span {
+  top: 0;
+  left: -4.9vw;
+}
+
+#quote p:nth-child(2) {
+  color: #CBBA37;
+  margin-left: 4vw;
+  margin-top: -1.95rem;
+}
+
+#quote p:nth-child(2) span {
+  bottom: 0;
+  right: -4.9vw;
+}
+
+.bordered-image {
+  position: relative;
+  text-align: center;
+}
+
+.bordered-image img {
+  height: 200px;
+  width: 200px;
+  padding: 3px;
+  border: 1px solid #e2e2e2;
+  border-radius: 200px;
+  background-color: #fff;
+}
+
+.bordered-image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  height: 1px;
+  background-color: #e2e2e2;
+  z-index: -1;
+}
+
+#vm {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+#vm > * {
+  height: 100%;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+#vm > :first-child {
+  padding-right: 50px;
+  border-right: 1px solid #e2e2e2;
+}
+
+#vm > :nth-child(2) {
+  padding-left: 50px;
+}
+
+#recognitions {
+  margin-top: 50px;
+}
+
+#recognitions ul {
+  list-style-type: none;
+}
+
+#recognitions .split, #recognitions .split-reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#recognitions .split > *, #recognitions .split-reverse > * {
+  width: 50%;
+}
+
+#recognitions .split div, #recognitions .split-reverse div {
+  padding-left: 50px;
+}
+
+#recognitions .split div img, #recognitions .split-reverse div img {
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: auto;
+}
+
+#recognitions .split-reverse {
+  margin-top: 75px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#recognitions .split-reverse div {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+#affiliations {
+  background-color: #333;
+  min-height: 350px;
+}
+
+#affiliations .carousel-item > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 350px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#affiliations .carousel-item > div img {
+  min-height: 300px;
+  min-width: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  background-color: #ffffff;
+  margin: 10px;
+}
+
+#affiliations .carousel-item > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align-last: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#affiliations .carousel-item > div > div h1 {
+  margin-top: 10px;
+}
+
+#affiliations .carousel-item > div > div * {
+  color: #ffffff !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  #quote {
+    margin-top: 100px;
+  }
+  #vm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #vm > * {
+    width: 100%;
+    margin: 0;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  #vm > *:nth-child(2) {
+    margin-top: 50px;
+  }
+  #recognitions ul {
+    width: 100% !important;
+    text-align: center;
+  }
+  #recognitions ul li {
+    margin-top: 10px;
+  }
+  #recognitions .split > div, #recognitions .split-reverse > div {
+    display: none;
+  }
+  #affiliations .carousel-item > div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 750px;
+    height: 100%;
+  }
+  #affiliations .carousel-item > div > img {
+    margin-top: 25px;
+  }
+  #affiliations .carousel-item > div > div .content-header {
+    display: none;
+  }
+}
+/*# sourceMappingURL=about.css.map */

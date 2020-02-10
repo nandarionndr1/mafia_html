@@ -1,0 +1,116 @@
+@import "global";
+
+#executive-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border-bottom: 1px solid $secondary;
+
+  > div {
+    // margin-top: 15px;
+
+    &:first-child {
+      margin-top: 25px;
+    }
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .officer {
+    margin: 25px 25px;
+
+    text-align: center;
+
+    img {
+      height: 300px;
+      padding: 8px;
+      width: auto;
+      border: 1px solid $secondary;
+    }
+
+    .detail {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      span {
+        font-family: $serif;
+        weight: bold;
+        color: $header-color;
+        font-size: $content-size-big;
+      }
+
+      p {
+        margin-top: 0;
+        font-size: $content-size;
+      }
+    }
+  }
+}
+
+#committees {
+  * {
+    text-align: left !important;
+  }
+
+  > div {
+    margin: 75px 25px 0 25px;
+    padding-bottom: 25px;
+    position: relative;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 77px;
+        height: 4px;
+        background-color: $secondary;
+        border-radius: 4px;
+      }
+    }
+    .title {
+      text-align-last: left;
+      font-weight: bold;
+      font-size: $header-size-small;
+      &::after {
+        font-weight: normal;
+        content: " Comittee";
+      }
+    }
+
+    .description {
+      margin: 0;
+    }
+
+    .members {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .member {
+        margin-right: 25px;
+        margin-bottom: 15px;
+      }
+      .name {
+        color: #000;
+        font-weight: bold;
+      }
+
+      p {
+        color: #000;
+        margin: 0;
+        font-size: $subtitle-size;
+      }
+    }
+  }
+}

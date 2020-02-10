@@ -1,0 +1,41 @@
+// GLOBAL VARIABLES
+
+/* Colors */
+$primary: #171717;
+$primary-hover: #444;
+$primary-pressed: #333;
+
+$secondary: #CBBA37;
+$secondary-hover: rgb(184, 168, 53);
+$secondary-pressed: rgb(179, 163, 49);
+
+$negative: #e8e8e8;
+
+$success: #9CCB37;
+$success-hover: rgb(142, 185, 49);
+$success-pressed: rgb(131, 170, 46);
+
+$error: rgb(143, 15, 15);
+$info: rgb(32, 107, 177);
+
+/* Typeface Variables */
+$serif: "Playfair Display", serif;
+$sans-serif: "Open Sans", sans-serif;
+
+$content-size: 1rem;
+$content-size-big: $content-size * 1.3;
+
+$subtitle-size: 0.8rem;
+
+$header-size: 2.5rem;
+$header-size-small: $header-size * 0.7;
+$header-size-big: $header-size * 1.3;
+
+$content-color: #444;
+$sitemap-color: #949494;
+$header-color: #000;
+$quote-color: #7f7f7f;
+$highlighted-color: $secondary;
+
+$icon-size: 24px;
+$responsive-margin-size: 5%;

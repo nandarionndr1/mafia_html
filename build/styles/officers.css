@@ -1,0 +1,145 @@
+/* Colors */
+/* Typeface Variables */
+#executive-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#executive-board > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#executive-board > div:first-child {
+  margin-top: 25px;
+}
+
+#executive-board .officer {
+  margin: 25px 25px;
+  text-align: center;
+}
+
+#executive-board .officer img {
+  height: 300px;
+  padding: 8px;
+  width: auto;
+  border: 1px solid #CBBA37;
+}
+
+#executive-board .officer .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#executive-board .officer .detail span {
+  font-family: "Playfair Display", serif;
+  weight: bold;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+#executive-board .officer .detail p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+#committees * {
+  text-align: left !important;
+}
+
+#committees > div {
+  margin: 75px 25px 0 25px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+#committees > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 77px;
+  height: 4px;
+  background-color: #CBBA37;
+  border-radius: 4px;
+}
+
+#committees > div .title {
+  text-align-last: left;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+#committees > div .title::after {
+  font-weight: normal;
+  content: " Comittee";
+}
+
+#committees > div .description {
+  margin: 0;
+}
+
+#committees > div .members {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#committees > div .members .member {
+  margin-right: 25px;
+  margin-bottom: 15px;
+}
+
+#committees > div .members .name {
+  color: #000;
+  font-weight: bold;
+}
+
+#committees > div .members p {
+  color: #000;
+  margin: 0;
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=officers.css.map */
